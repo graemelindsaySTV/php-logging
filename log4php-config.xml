@@ -1,0 +1,18 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+
+    <appender name="myConsoleAppender" class="LoggerAppenderConsole">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%logger] %message%newline" />
+        </layout>
+        <param name="target" value="stdout" />
+    </appender>
+
+    <logger name="console">
+        <appender_ref ref="myConsoleAppender" />
+    </logger>
+
+    <root>
+        <level value="DEBUG" />
+        <appender_ref ref="myConsoleAppender" />
+    </root>
+</configuration>

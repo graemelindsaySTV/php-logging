@@ -1,0 +1,7 @@
+{
+    "name": "gl/apache-logging",
+    "description": "Apache logging",
+    "require": {
+        "apache/log4php": "^2.3"
+    }
+}
