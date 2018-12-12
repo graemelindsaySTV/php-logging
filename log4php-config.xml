@@ -2,7 +2,7 @@
 
     <appender name="myConsoleAppender" class="LoggerAppenderConsole">
         <layout class="LoggerLayoutPattern">
-            <param name="conversionPattern" value="%date [%logger] %message%newline" />
+            <param name="conversionPattern" value="%date{Y-m-d H:i:s,u} %level %method %process %message%newline" />
         </layout>
         <param name="target" value="stdout" />
     </appender>
